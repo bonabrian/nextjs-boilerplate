@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "check-types": "tsc --noEmit --pretty"
   },
   "dependencies": {
     "@next/font": "13.1.6",
@@ -28,6 +29,7 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
     "prettier": "^2.8.4",
     "typescript": "^4.9.5"
   }
