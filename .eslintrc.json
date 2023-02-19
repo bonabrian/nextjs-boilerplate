@@ -39,6 +39,7 @@
           { "varsIgnorePattern": "^_" }
         ],
         "jsx-quotes": ["error", "prefer-double"],
+        "react/display-name": "off",
         "simple-import-sort/imports": "error", // import configuration for `eslint-plugin-simple-import-sort`
         "simple-import-sort/exports": "error" // export configuration for `eslint-plugin-simple-import-sort`
       }
