@@ -21,7 +21,8 @@
       "files": ["**/*.ts", "**/*.tsx"],
       "plugins": [
         "@typescript-eslint",
-        "unused-imports"
+        "unused-imports",
+        "simple-import-sort"
       ],
       "extends": [
         "next/core-web-vitals",
@@ -47,7 +48,9 @@
           "error",
           { "varsIgnorePattern": "^_" }
         ],
-        "jsx-quotes": ["error", "prefer-double"]
+        "jsx-quotes": ["error", "prefer-double"],
+        "simple-import-sort/imports": "error", // import configuration for `eslint-plugin-simple-import-sort`
+        "simple-import-sort/exports": "error" // export configuration for `eslint-plugin-simple-import-sort`
       }
     }
   ]
