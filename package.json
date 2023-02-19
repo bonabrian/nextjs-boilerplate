@@ -1,7 +1,10 @@
 {
   "name": "nextjs-boilerplate",
   "version": "0.1.0",
-  "private": true,
+  "description": "Next.js, Typescript, ESLint, Prettier, Husky, Lint-Staged, Jest, Testing Library, Commitlint, Tailwindcss",
+  "author": "Bona Brian Siagian",
+  "license": "MIT",
+  "homepage": "https://github.com/bonabrian/nextjs-boilerplate",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
