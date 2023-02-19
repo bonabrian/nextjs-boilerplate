@@ -39,12 +39,15 @@
             "semi": false
           }
         ],
+        "@typescript-eslint/comma-dangle": "off", // avoid conflict rule between Eslint and Prettier
+        "@typescript-eslint/consistent-type-imports": "error", // ensure `import type` is used when it's necessary
         "unused-imports/no-unused-imports": "error",
         "@typescript-eslint/no-unused-vars": "off", // avoid conflict with unused-imports/no-unused-vars
         "unused-imports/no-unused-vars": [
           "error",
           { "varsIgnorePattern": "^_" }
-        ]
+        ],
+        "jsx-quotes": ["error", "prefer-double"]
       }
     }
   ]
