@@ -19,6 +19,10 @@
     // configuration for typescript files
     {
       "files": ["**/*.ts", "**/*.tsx"],
+      "plugins": [
+        "@typescript-eslint",
+        "unused-imports"
+      ],
       "extends": [
         "next/core-web-vitals",
         "plugin:prettier/recommended"
@@ -34,6 +38,12 @@
             "endOfLine": "auto",
             "semi": false
           }
+        ],
+        "unused-imports/no-unused-imports": "error",
+        "@typescript-eslint/no-unused-vars": "off", // avoid conflict with unused-imports/no-unused-vars
+        "unused-imports/no-unused-vars": [
+          "error",
+          { "varsIgnorePattern": "^_" }
         ]
       }
     }
