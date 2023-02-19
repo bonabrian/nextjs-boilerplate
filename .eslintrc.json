@@ -1,3 +1,41 @@
 {
-  "extends": "next/core-web-vitals"
+  // configuration for javascript files
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "endOfLine": "auto",
+        "semi": false
+      }
+    ]
+  },
+  "ignorePatterns": ["next-env.d.ts"],
+  "overrides": [
+    // configuration for typescript files
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "extends": [
+        "next/core-web-vitals",
+        "plugin:prettier/recommended"
+      ],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      },
+      "rules": {
+        "prettier/prettier": [
+          "error",
+          {
+            "singleQuote": true,
+            "endOfLine": "auto",
+            "semi": false
+          }
+        ]
+      }
+    }
+  ]
 }
