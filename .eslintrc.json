@@ -1,9 +1,6 @@
 {
   // configuration for javascript files
-  "extends": [
-    "next/core-web-vitals",
-    "plugin:prettier/recommended"
-  ],
+  "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
   "rules": {
     "prettier/prettier": [
       "error",
@@ -19,15 +16,8 @@
     // configuration for typescript files
     {
       "files": ["**/*.ts", "**/*.tsx"],
-      "plugins": [
-        "@typescript-eslint",
-        "unused-imports",
-        "simple-import-sort"
-      ],
-      "extends": [
-        "next/core-web-vitals",
-        "plugin:prettier/recommended"
-      ],
+      "plugins": ["@typescript-eslint", "unused-imports", "simple-import-sort"],
+      "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
       "parserOptions": {
         "project": "./tsconfig.json"
       },
@@ -52,6 +42,17 @@
         "simple-import-sort/imports": "error", // import configuration for `eslint-plugin-simple-import-sort`
         "simple-import-sort/exports": "error" // export configuration for `eslint-plugin-simple-import-sort`
       }
+    },
+    // configuration for testing
+    {
+      "files": ["**/*.test.ts", "**/*.test.tsx"],
+      "plugins": ["jest", "jest-formatting", "testing-library", "jest-dom"],
+      "extends": [
+        "plugin:jest/recommended",
+        "plugin:jest-formatting/recommended",
+        "plugin:testing-library/react",
+        "plugin:jest-dom/recommended"
+      ]
     }
   ]
 }
