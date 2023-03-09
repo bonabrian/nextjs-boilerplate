@@ -1,7 +1,8 @@
+import { theme } from '@chakra-ui/react'
+
 export const colors = {
-  black: '#000000',
-  white: '#FFFFFF',
-  primary: {
+  ...theme.colors,
+  brand: {
     100: '#F2E9FF',
     200: '#E3D3FF',
     300: '#D4BDFF',
