@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <NextSeo title="Home" />
-      <main className="flex flex-col min-h-screen items-center justify-between p-12">
+      <div>
         <div className="flex justify-center items-center flex-1">
           <h1 className="text-3xl font-bold">Hello World!</h1>
         </div>
@@ -30,7 +30,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </main>
+      </div>
     </>
   )
 }
