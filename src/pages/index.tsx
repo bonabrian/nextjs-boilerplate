@@ -1,17 +1,9 @@
-import Head from 'next/head'
+import { NextSeo } from 'next-seo'
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Next.js boilerplate</title>
-        <meta
-          name="description"
-          content="Next.js, Typescript, ESLint, Prettier, Husky, Lint-Staged, Jest, Testing Library, Commitlint, Tailwindcss"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <NextSeo title="Home" />
       <main className="flex flex-col min-h-screen items-center justify-between p-12">
         <div className="flex justify-center items-center flex-1">
           <h1 className="text-3xl font-bold">Hello World!</h1>
