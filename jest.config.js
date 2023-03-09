@@ -18,6 +18,7 @@ const customJestConfig = {
     './src/**/*.{js,jsx,ts,tsx}',
     '!./src/**/_*.{js,jsx,ts,tsx}',
     '!./src/**/index*.{js,jsx,ts,tsx}',
+    '!./src/styles/**/*.{js,jsx,ts,tsx}',
     '!**/*.d.ts',
     '!**/node_modules/**',
   ],
