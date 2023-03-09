@@ -1,3 +1,4 @@
+import Button from './button'
 import Chakra from './chakra'
 
-export { Chakra }
+export { Button, Chakra }
